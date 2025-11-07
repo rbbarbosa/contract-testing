@@ -2,6 +2,13 @@
 
 Exploring Design by Contract in Python with icontract, pytest, and hypothesis -- runtime contract enforcement meets property-based testing.
 
+Here's an example of a contract:
+
+```
+@require(lambda x: x >= 0, "x must be non-negative")
+@ensure(lambda result, x: result <= x, "result must be at most x")
+```
+
 Run `pytest` to test the contract in [`python_contract.py`](python_contract.py) and find the counterexample:
 
 ```
