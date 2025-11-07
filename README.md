@@ -9,3 +9,9 @@ E       Falsifying example: test_sqrt_roundup_contracts(
 E           x=0.0,
 E       )
 ```
+
+You may need to
+
+```
+pip install icontract icontract-hypothesis "hypothesis<=6.98.0" pytest
+```
